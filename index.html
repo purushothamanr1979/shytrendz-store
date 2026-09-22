@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ShyTrendz | Premium Women's Ethnic & Western Wear</title>
-    <!-- High-Fidelity Premium Boutique Typography Structure -->
+    <!-- Premium High-Fidelity Typography Pipeline Rendering Framework -->
     <link href="https://googleapis.com" rel="stylesheet">
     <style>
-        /* Base Design System Tokens & Global Color Management */
+        /* Base Root Tokens & Color Strategy Infrastructure Matrix */
         :root {
             --primary-dark: #111111;
             --text-muted: #555555;
@@ -20,10 +20,10 @@
         * { margin: 0; padding: 0; box-sizing: border-box; font-family: var(--font-stack); scroll-behavior: smooth; }
         body { background: #ffffff; color: var(--primary-dark); overflow-x: hidden; -webkit-font-smoothing: antialiased; }
 
-        /* Premium Announcement Banner Ribbon */
+        /* Announcement Premium Ticker Ribbon */
         .announcement-bar { background: var(--primary-dark); color: #ffffff; text-align: center; padding: 8px 20px; font-size: 11px; font-weight: 500; text-transform: uppercase; letter-spacing: 1.5px; }
 
-        /* Sticky Glassmorphism Navigation Header Layout */
+        /* Sticky Glassmorphism Header Bar Layout Grid */
         header { display: flex; justify-content: space-between; align-items: center; padding: 15px 5%; border-bottom: 1px solid var(--border-line); position: sticky; top: 0; background: rgba(255, 255, 255, 0.96); backdrop-filter: blur(12px); z-index: 100; }
         .logo-area { display: flex; align-items: center; }
         .logo-area img { height: 42px; max-height: 42px; object-fit: contain; }
@@ -33,18 +33,18 @@
         .bag-trigger { position: relative; cursor: pointer; font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; display: flex; align-items: center; }
         .bag-counter { background: var(--primary-dark); color: #ffffff; border-radius: 50%; padding: 2px 7px; font-size: 10px; margin-left: 6px; font-weight: 600; }
 
-        /* Hero Merchandising Stage Section */
+        /* Hero Banner Collection Stage */
         .hero-banner { height: 55vh; background: var(--surface-bg); display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 20px; border-bottom: 1px solid var(--border-line); }
         .hero-banner h1 { font-size: 42px; font-weight: 700; text-transform: uppercase; letter-spacing: 3px; margin-bottom: 12px; }
         .hero-banner p { color: var(--text-muted); font-size: 16px; margin-bottom: 25px; max-width: 600px; font-weight: 400; line-height: 1.6; }
         .hero-action-link { background: var(--primary-dark); color: #ffffff; padding: 14px 35px; text-decoration: none; text-transform: uppercase; font-weight: 600; font-size: 12px; letter-spacing: 1px; transition: background 0.2s; border-radius: 0px; }
         .hero-action-link:hover { background: #333333; }
 
-        /* Trust & Value Proposition Badges Ribbon */
+        /* Trust Badges Value Proposition Layout row */
         .trust-row { display: flex; justify-content: space-around; align-items: center; padding: 20px 5%; background: #ffffff; border-bottom: 1px solid var(--border-line); gap: 15px; flex-wrap: wrap; text-align: center; }
         .trust-tag { font-size: 12px; font-weight: 500; color: var(--text-muted); letter-spacing: 0.5px; text-transform: uppercase; }
 
-        /* Product Showcase Grid Layout Matrix */
+        /* Central Catalog Showcase Stage Section */
         .showcase-wrapper { max-width: 1300px; margin: 50px auto; padding: 0 20px; }
         .section-headline { text-align: center; margin-bottom: 45px; font-size: 24px; font-weight: 700; text-transform: uppercase; letter-spacing: 2px; position: relative; }
         .section-headline::after { content: ''; display: block; width: 40px; height: 2px; background: var(--primary-dark); margin: 10px auto 0; }
@@ -56,7 +56,7 @@
         .product-label { font-size: 15px; font-weight: 600; margin-bottom: 6px; text-align: left; letter-spacing: 0.2px; }
         .product-cost { font-size: 15px; color: var(--primary-dark); margin-bottom: 12px; font-weight: 700; text-align: left; }
         
-        /* Interactive Apparel Sizing Options Framework */
+        /* Functional Variant Selector Framework */
         .selector-headline { text-align: left; font-size: 11px; text-transform: uppercase; color: #888; margin-bottom: 6px; font-weight: 600; letter-spacing: 0.5px; }
         .variant-group-row { display: flex; gap: 8px; margin-bottom: 16px; justify-content: flex-start; flex-wrap: wrap; }
         .variant-unit { font-size: 11px; font-weight: 600; padding: 5px 12px; border: 1px solid var(--border-line); background: #ffffff; cursor: pointer; transition: 0.2s; text-transform: uppercase; }
@@ -66,22 +66,22 @@
         .action-add-trigger { width: 100%; background: var(--primary-dark); color: #ffffff; padding: 12px; border: none; text-transform: uppercase; font-weight: 700; font-size: 11px; letter-spacing: 1px; cursor: pointer; transition: background 0.2s; margin-top: auto; }
         .action-add-trigger:hover { background: #333333; }
         
-        /* Sliding Mini-Cart Sidebar System Panel */
+        /* Interactive Sidebar Shopping Drawer Overlay Panel */
         .cart-slide-drawer { position: fixed; top: 0; right: -460px; width: 460px; height: 100vh; background: #ffffff; box-shadow: -10px 0 40px rgba(0,0,0,0.06); z-index: 1000; padding: 30px 25px; display: flex; flex-direction: column; transition: 0.3s cubic-bezier(0.16, 1, 0.3, 1); }
         .cart-slide-drawer.active-view { right: 0; }
         .drawer-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 25px; border-bottom: 1px solid var(--border-line); padding-bottom: 15px; }
         .drawer-header h3 { text-transform: uppercase; letter-spacing: 1px; font-size: 16px; font-weight: 700; }
         .drawer-close-btn { cursor: pointer; font-size: 26px; font-weight: 300; line-height: 1; }
         
-        .drawer-scroll-area { flex: 1; overflow-y: auto; padding-right: 5px; margin-bottom: 15px; }
+        .drawer-scroll-area { flex: 1; overflow-y: auto; padding-right: 5px; }
         .node-cart-row { display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; padding-bottom: 15px; border-bottom: 1px solid var(--surface-bg); }
         .node-cart-info { text-align: left; }
         .node-cart-title { font-size: 13px; font-weight: 600; margin-bottom: 4px; }
         .node-cart-meta { font-size: 12px; color: var(--text-muted); }
         .node-cart-remove { color: #dc2626; font-size: 11px; cursor: pointer; background: none; border: none; font-weight: 500; text-transform: uppercase; letter-spacing: 0.5px; margin-top: 5px; }
         
-        /* Customer Shipping & Delivery Details Capture Form Matrix */
-        .checkout-delivery-form { background: var(--surface-bg); padding: 18px; border: 1px solid var(--border-line); margin-bottom: 15px; display: none; }
+        /* Core Production Deployment Delivery Address Capturing Grid Form */
+        .checkout-delivery-form { background: var(--surface-bg); padding: 18px; border: 1px solid var(--border-line); margin-top: 15px; margin-bottom: 15px; display: none; }
         .checkout-delivery-form.active-view { display: block; }
         .checkout-delivery-form h4 { font-size: 12px; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 12px; font-weight: 700; color: var(--primary-dark); }
         .input-flex-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 8px; }
@@ -89,7 +89,7 @@
         .checkout-delivery-form input:focus { border-color: var(--primary-dark); }
         .span-full-columns { grid-column: span 2; }
 
-        .drawer-footer-block { border-top: 1px solid var(--border-line); padding-top: 20px; margin-top: auto; }
+        .drawer-footer-block { border-top: 1px solid var(--border-line); padding-top: 20px; }
         .summary-total-row { display: flex; justify-content: space-between; font-weight: 700; font-size: 16px; margin-bottom: 20px; text-transform: uppercase; letter-spacing: 0.5px; }
         .action-submit-btn { width: 100%; display: block; background: var(--primary-dark); color: #ffffff; text-align: center; padding: 15px; text-decoration: none; text-transform: uppercase; font-weight: 700; font-size: 12px; letter-spacing: 1px; border: none; cursor: pointer; transition: background 0.2s; }
         .action-submit-btn:hover { background: #333333; }
@@ -97,7 +97,7 @@
         .global-viewport-overlay { position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background: rgba(0,0,0,0.4); z-index: 999; display: none; backdrop-filter: blur(3px); }
         .global-viewport-overlay.active-view { display: block; }
 
-        /* Dynamic High-Fidelity Mobile Fluidity Constraints */
+        /* Dynamic High-Fidelity Mobile Responsive Viewport Fixes */
         @media (max-width: 480px) {
             .cart-slide-drawer { width: 100%; right: -100%; padding: 20px 15px; }
             .hero-banner h1 { font-size: 28px; }
