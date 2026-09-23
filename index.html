@@ -4,78 +4,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ShyTrendz | Premium Luxury Women's Apparel Store</title>
-    <!-- Google Fonts for Luxury Aesthetic -->
+    <!-- Google Fonts for Editorial Luxury Look -->
     <link rel="preconnect" href="https://googleapis.com">
     <link rel="preconnect" href="https://gstatic.com" crossorigin>
-    <link href="https://googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
     
     <style>
-        /* CSS RESET & VARIABLES */
+        /* CSS CONFIGURATION & BRAND COLOR PALETTE */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
         :root {
-            --primary-color: #1a1a1a;
-            --accent-color: #8c765c; /* Muted Gold / Luxury Taupe */
-            --bg-light: #faf9f6; /* Off-White / Cream background */
-            --text-dark: #2d2d2d;
-            --text-light: #707070;
+            --brand-primary: #112d1a; /* Forest Green from your logo */
+            --brand-accent: #8b7355;  /* Soft Gold highlight */
+            --bg-base: #fbfbf9;       /* Ultra-clean warm off-white */
+            --text-main: #1c1c1c;
+            --text-muted: #666666;
             --font-serif: 'Cormorant Garamond', serif;
             --font-sans: 'Montserrat', sans-serif;
-            --transition-smooth: all 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+            --card-radius: 4px;
+            --transition-smooth: all 0.5s cubic-bezier(0.25, 1, 0.5, 1);
         }
 
         body {
             font-family: var(--font-sans);
-            background-color: var(--bg-light);
-            color: var(--text-dark);
+            background-color: var(--bg-base);
+            color: var(--text-main);
             line-height: 1.6;
             overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
         }
 
-        /* ANNOUNCEMENT BAR */
-        .announcement-bar {
-            background-color: var(--primary-color);
+        /* TOP PROMOTIONAL BANNER */
+        .promo-bar {
+            background-color: var(--brand-primary);
             color: #ffffff;
             text-align: center;
-            padding: 10px 20px;
+            padding: 12px 20px;
             font-size: 0.75rem;
             letter-spacing: 2px;
             text-transform: uppercase;
-            font-weight: 400;
+            font-weight: 500;
         }
-        .announcement-bar span {
-            color: var(--accent-color);
+        .promo-bar span {
+            color: #d4af37; /* Bright Gold accent */
             font-weight: 600;
         }
 
-        /* HEADER & NAVIGATION */
+        /* PREMIUM HEADER NAVIGATION */
         header {
-            background-color: rgba(250, 249, 246, 0.95);
+            background-color: rgba(251, 251, 249, 0.96);
             position: sticky;
             top: 0;
             z-index: 1000;
-            border-bottom: 1px solid rgba(0,0,0,0.05);
-            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(17, 45, 26, 0.06);
+            backdrop-filter: blur(12px);
         }
-        .header-container {
+        .header-wrapper {
             max-width: 1400px;
             margin: 0 auto;
-            padding: 20px 40px;
+            padding: 15px 40px;
             display: flex;
+            align-items: center;
             justify-content: space-between;
+        }
+        .logo-container {
+            display: flex;
             align-items: center;
         }
-        .logo {
-            font-family: var(--font-serif);
-            font-size: 2.2rem;
-            font-weight: 600;
-            letter-spacing: 4px;
-            text-decoration: none;
-            color: var(--primary-color);
-            text-transform: uppercase;
+        .logo-img {
+            height: 75px; /* Perfect sizing to preserve script detail */
+            width: auto;
+            object-fit: contain;
+            mix-blend-mode: multiply; /* Blends logo background out seamlessly */
         }
         nav ul {
             display: flex;
@@ -84,92 +87,95 @@
         }
         nav ul li a {
             text-decoration: none;
-            color: var(--text-dark);
+            color: var(--text-main);
             font-size: 0.85rem;
             font-weight: 500;
             text-transform: uppercase;
             letter-spacing: 1.5px;
             transition: var(--transition-smooth);
             position: relative;
+            padding-bottom: 4px;
         }
         nav ul li a::after {
             content: '';
             position: absolute;
-            bottom: -5px;
+            bottom: 0;
             left: 0;
             width: 0;
             height: 1px;
-            background-color: var(--accent-color);
+            background-color: var(--brand-accent);
             transition: var(--transition-smooth);
         }
         nav ul li a:hover::after {
             width: 100%;
         }
         nav ul li a:hover {
-            color: var(--accent-color);
+            color: var(--brand-accent);
         }
 
-        /* HERO BANNER SECTION */
-        .hero {
-            padding: 60px 40px 20px;
+        /* COLLECTION HERO HEADER */
+        .hero-intro {
+            padding: 80px 40px 40px;
             max-width: 1400px;
             margin: 0 auto;
             text-align: center;
         }
-        .hero h1 {
+        .hero-intro h1 {
             font-family: var(--font-serif);
-            font-size: 3.5rem;
+            font-size: 3.8rem;
             font-weight: 400;
-            letter-spacing: 2px;
+            letter-spacing: 1px;
+            color: var(--brand-primary);
             margin-bottom: 15px;
         }
-        .hero p {
-            font-size: 1rem;
-            color: var(--text-light);
-            max-width: 600px;
-            margin: 0 auto 40px;
+        .hero-intro p {
+            font-size: 1.05rem;
+            color: var(--text-muted);
+            max-width: 650px;
+            margin: 0 auto;
             font-weight: 300;
             letter-spacing: 0.5px;
         }
 
-        /* CATEGORIES / INVENTORY GRID */
-        .collection-grid {
+        /* INVENTORY STYLISH ARCHITECTURE GRID */
+        .inventory-grid {
             max-width: 1400px;
             margin: 0 auto;
-            padding: 20px 40px 80px;
+            padding: 20px 40px 100px;
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            gap: 40px 30px;
+            gap: 50px 35px;
         }
 
         @media (max-width: 1024px) {
-            .collection-grid { grid-template-columns: repeat(2, 1fr); }
-            .hero h1 { font-size: 2.8rem; }
+            .inventory-grid { grid-template-columns: repeat(2, 1fr); }
+            .hero-intro h1 { font-size: 3rem; }
         }
-        @media (max-width: 650px) {
-            .collection-grid { grid-template-columns: 1fr; }
-            .header-container { padding: 15px 20px; }
-            .logo { font-size: 1.6rem; }
-            nav { display: none; } /* Simplified for code layout */
+        @media (max-width: 768px) {
+            .inventory-grid { grid-template-columns: 1fr; padding: 20px 20px 60px; }
+            .header-wrapper { padding: 15px 20px; flex-direction: column; gap: 15px; }
+            nav ul { flex-wrap: wrap; justify-content: center; gap: 20px 15px; }
+            .hero-intro h1 { font-size: 2.5rem; }
         }
 
-        /* GRID CARD COMPONENT */
-        .category-card {
+        /* PREMIUM IMAGE LINKS CARD LAYOUT */
+        .group-card {
             text-decoration: none;
             color: inherit;
             display: block;
-            group: url();
+            outline: none;
         }
-        .image-wrapper {
+        .media-container {
             position: relative;
             width: 100%;
-            padding-bottom: 135px; /* Elegant 3:4 portrait ratio for fashion */
+            padding-bottom: 135px; /* Clean 3:4 portrait retail crop ratio */
             overflow: hidden;
-            background-color: #eaeaea;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.02);
+            background-color: #f2f0eb;
+            border-radius: var(--card-radius);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02);
             transition: var(--transition-smooth);
         }
-        .category-image {
+        .group-image {
             position: absolute;
             top: 0;
             left: 0;
@@ -179,112 +185,111 @@
             opacity: 0;
             transition: opacity 0.8s ease-in-out, transform 1.2s cubic-bezier(0.25, 1, 0.5, 1);
         }
-        .category-image.active {
+        /* Make the first image active explicitly */
+        .group-image.active {
             opacity: 1;
         }
-        /* Hover Effect: Gentle image scaling and border tint */
-        .category-card:hover .image-wrapper {
-            box-shadow: 0 10px 30px rgba(140, 118, 92, 0.15);
+        /* Smooth zoom on container hover */
+        .group-card:hover .media-container {
+            box-shadow: 0 15px 35px rgba(17, 45, 26, 0.12);
         }
-        .category-card:hover .category-image.active {
-            transform: scale(1.04);
+        .group-card:hover .group-image.active {
+            transform: scale(1.05);
         }
         
-        .category-info {
-            padding: 20px 5px 0;
+        /* CARD BOTTOM TEXT LABELS */
+        .group-details {
+            padding: 22px 4px 0;
             display: flex;
             justify-content: space-between;
             align-items: baseline;
         }
-        .category-title {
+        .group-title {
             font-family: var(--font-serif);
-            font-size: 1.6rem;
+            font-size: 1.7rem;
             font-weight: 500;
-            letter-spacing: 1px;
-            color: var(--primary-color);
+            letter-spacing: 0.5px;
+            color: var(--brand-primary);
             transition: var(--transition-smooth);
         }
-        .category-card:hover .category-title {
-            color: var(--accent-color);
+        .group-card:hover .group-title {
+            color: var(--brand-accent);
         }
-        .category-action {
+        .group-action-label {
             font-size: 0.75rem;
             text-transform: uppercase;
             letter-spacing: 2px;
-            color: var(--text-light);
-            border-bottom: 1px solid var(--text-light);
+            color: var(--text-muted);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.15);
             padding-bottom: 2px;
             transition: var(--transition-smooth);
         }
-        .category-card:hover .category-action {
-            color: var(--accent-color);
-            border-color: var(--accent-color);
+        .group-card:hover .group-action-label {
+            color: var(--brand-accent);
+            border-color: var(--brand-accent);
         }
 
-        /* FOOTER */
+        /* ELEGANT FOOTER ACCENT */
         footer {
-            background-color: var(--primary-color);
+            background-color: var(--brand-primary);
             color: #ffffff;
             text-align: center;
-            padding: 40px 20px;
+            padding: 50px 20px;
             font-size: 0.8rem;
-            letter-spacing: 1px;
+            letter-spacing: 1.5px;
             font-weight: 300;
+            border-top: 4px solid var(--brand-accent);
         }
         footer p {
-            color: #a0a0a0;
+            color: rgba(255, 255, 255, 0.6);
         }
     </style>
 </head>
 <body>
 
-    <!-- ANNOUNCEMENT BAR -->
-    <div class="announcement-bar">
+    <!-- TOP PROMOTIONAL ANNOUNCEMENT -->
+    <div class="promo-bar">
         ✨ Code: <span>WELCOME10</span> for 10% Off | Free Shipping on Orders Above ₹3,000 ✨
     </div>
 
-    <!-- HEADER / NAVIGATION -->
+    <!-- MAIN APP HEADER AREA WITH LOGO BLENDING -->
     <header>
-        <div class="header-container">
-            <a href="#" class="logo">ShyTrendz</a>
+        <div class="header-wrapper">
+            <div class="logo-container">
+                <img src="logo.png" alt="ShyTrendz Logo" class="logo-img">
+            </div>
             <nav>
                 <ul>
                     <li><a href="sarees.html">Sarees</a></li>
                     <li><a href="chudi.html">Chudi</a></li>
                     <li><a href="lehenga.html">Lehenga</a></li>
                     <li><a href="salwars.html">Salwars</a></li>
-                    <li><a href="jeans-tops.html">Jeans & Tops</a></li>
+                    <li><a href="jeans-tops.html">Jeans &amp; Tops</a></li>
                     <li><a href="frocks.html">Frocks</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <!-- HERO INTRODUCTION -->
-    <section class="hero">
-        <h1>The Curated Curation</h1>
-        <p>Discover timeless luxury and modern trends crafted for elegance. Browse our exquisite inventory groups below.</p>
+    <!-- INTRO DIALOGUE BRAND STATEMENT -->
+    <section class="hero-intro">
+        <h1>gorgeous...you</h1>
+        <p>Step into premium luxury couture. Explore our curated signature collections designed to reflect true timeless elegance.</p>
     </section>
 
-    <!-- INVENTORY CATEGORIES GRID -->
-    <section class="collection-grid">
+    <!-- INTERACTIVE DYNAMIC CATEGORIES DISPLAY -->
+    <section class="inventory-grid">
 
-        <!-- SAREES -->
-        <a href="sarees.html" class="category-card">
-            <div class="image-wrapper" data-slideshow>
-                <!-- Replace src strings with your real image URLs later -->
-                <img src="https://unsplash.com" alt="Sarees Collection 1" class="category-image active">
-                <img src="https://unsplash.com" alt="Sarees Collection 2" class="category-image">
-                <img src="https://unsplash.com" alt="Sarees Collection 3" class="category-image">
+        <!-- SAREES CATEGORY CARD -->
+        <a href="sarees.html" class="group-card">
+            <div class="media-container" data-slideshow>
+                <!-- Initial active sample image -->
+                <img src="sarees-1.png" alt="Exclusive Luxury Sarees" class="group-image active">
+                <!-- Add alternative images here later when ready: 
+                <img src="sarees-2.png" alt="Sarees Option 2" class="group-image"> 
+                -->
             </div>
-            <div class="category-info">
-                <h2 class="category-title">Luxury Sarees</h2>
-                <span class="category-action">Explore</span>
+            <div class="group-details">
+                <h2 class="group-title">Sarees</h2>
+                <span class="group-action-label">View All</span>
             </div>
-        </a>
-
-        <!-- CHUDI -->
-        <a href="chudi.html" class="category-card">
-            <div class="image-wrapper" data-slideshow>
-                <img src="https://unsplash.com" alt="Chudi 1" class="category-image active">
-                <img src="https://unsplash.com" alt="Chudi 2" class="category-image">
