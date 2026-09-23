@@ -2,86 +2,84 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ShyTrendz | Premium Women's Ethnic & Western Wear</title>
+    <title>ShyTrendz | Premium Luxury Women's Apparel Store</title>
     <link href="https://googleapis.com" rel="stylesheet">
     <style>
-        :root { --primary-dark: #111111; --text-muted: #555555; --surface-bg: #f9f9fb; --border-line: #e4e4e7; --accent-pink: #db2777; --font-stack: 'Plus Jakarta Sans', sans-serif; }
-        * { margin: 0; padding: 0; box-sizing: border-box; font-family: var(--font-stack); scroll-behavior: smooth; }
-        body { background: #ffffff; color: var(--primary-dark); overflow-x: hidden; -webkit-font-smoothing: antialiased; }
-        .announcement-bar { background: var(--primary-dark); color: #ffffff; text-align: center; padding: 8px 20px; font-size: 11px; font-weight: 500; text-transform: uppercase; letter-spacing: 1.5px; }
-        header { display: flex; justify-content: space-between; align-items: center; padding: 15px 5%; border-bottom: 1px solid var(--border-line); position: sticky; top: 0; background: rgba(255, 255, 255, 0.96); backdrop-filter: blur(12px); z-index: 100; }
-        .logo-area { display: flex; align-items: center; } .logo-area img { height: 42px; max-height: 42px; object-fit: contain; }
-        nav { display: flex; gap: 30px; } nav a { text-decoration: none; color: var(--primary-dark); font-weight: 500; font-size: 13px; text-transform: uppercase; letter-spacing: 0.8px; }
-        .bag-trigger { position: relative; cursor: pointer; font-size: 13px; font-weight: 600; text-transform: uppercase; display: flex; align-items: center; }
-        .bag-counter { background: var(--primary-dark); color: #ffffff; border-radius: 50%; padding: 2px 7px; font-size: 10px; margin-left: 6px; }
-        .hero-banner { height: 45vh; background: var(--surface-bg); display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 20px; }
-        .hero-banner h1 { font-size: 36px; font-weight: 700; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 12px; }
-        .hero-action-link { background: var(--primary-dark); color: #ffffff; padding: 12px 30px; text-decoration: none; text-transform: uppercase; font-weight: 600; font-size: 11px; }
-        .trust-row { display: flex; justify-content: space-around; padding: 15px 5%; background: #ffffff; border-bottom: 1px solid var(--border-line); gap: 10px; flex-wrap: wrap; }
-        .trust-tag { font-size: 11px; font-weight: 500; color: var(--text-muted); text-transform: uppercase; }
-        .showcase-wrapper { max-width: 1300px; margin: 40px auto; padding: 0 20px; }
-        .section-headline { text-align: center; margin-bottom: 35px; font-size: 22px; font-weight: 700; text-transform: uppercase; letter-spacing: 2px; }
-        .product-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 30px; }
-        .product-node { border: 1px solid var(--border-line); padding: 14px; background: #ffffff; display: flex; flex-direction: column; }
-        .product-display-frame { width: 100%; height: 350px; background: var(--surface-bg); margin-bottom: 12px; background-size: cover; background-position: center; }
-        .product-label { font-size: 14px; font-weight: 600; margin-bottom: 4px; }
-        .product-cost { font-size: 14px; font-weight: 700; margin-bottom: 10px; }
-        .selector-headline { font-size: 10px; text-transform: uppercase; color: #888; margin-bottom: 4px; font-weight: 600; }
-        .variant-group-row { display: flex; gap: 6px; margin-bottom: 14px; }
-        .variant-unit { font-size: 10px; font-weight: 600; padding: 4px 10px; border: 1px solid var(--border-line); cursor: pointer; text-transform: uppercase; }
-        .variant-unit.active-selected { background: var(--primary-dark); color: #ffffff; border-color: var(--primary-dark); }
-        .action-add-trigger { width: 100%; background: var(--primary-dark); color: #ffffff; padding: 10px; border: none; text-transform: uppercase; font-weight: 700; font-size: 11px; cursor: pointer; margin-top: auto; }
-        .cart-slide-drawer { position: fixed; top: 0; right: -460px; width: 460px; height: 100vh; background: #ffffff; box-shadow: -10px 0 40px rgba(0,0,0,0.06); z-index: 1000; padding: 25px; display: flex; flex-direction: column; transition: 0.3s ease; }
-        .cart-slide-drawer.active-view { right: 0; }
-        .drawer-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; border-bottom: 1px solid var(--border-line); padding-bottom: 10px; }
-        .drawer-close-btn { cursor: pointer; font-size: 24px; }
-        .drawer-scroll-area { flex: 1; overflow-y: auto; padding-right: 5px; }
-        .node-cart-row { display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; padding-bottom: 12px; border-bottom: 1px solid var(--surface-bg); }
-        .node-cart-title { font-size: 12px; font-weight: 600; } .node-cart-meta { font-size: 11px; color: var(--text-muted); }
-        .node-cart-remove { color: #dc2626; font-size: 10px; cursor: pointer; background: none; border: none; text-transform: uppercase; }
-        .checkout-delivery-form { background: var(--surface-bg); padding: 15px; border: 1px solid var(--border-line); margin-bottom: 15px; display: none; }
+        :root { --primary-dark: #111111; --text-muted: #666666; --surface-bg: #f9f9fb; --border-line: #e4e4e7; --accent-pink: #db2777; --success-green: #16a34a; --font-stack: 'Plus Jakarta Sans', sans-serif; }
+        * { margin:0; padding:0; box-sizing:border-box; font-family:var(--font-stack); scroll-behavior:smooth; }
+        body { background:#ffffff; color:var(--primary-dark); overflow-x:hidden; -webkit-font-smoothing:antialiased; }
+        .announcement-bar { background:var(--primary-dark); color:#ffffff; text-align:center; padding:10px 20px; font-size:11px; font-weight:500; text-transform:uppercase; letter-spacing:1.5px; }
+        header { display:flex; justify-content:space-between; align-items:center; padding:18px 5%; border-bottom:1px solid var(--border-line); position:sticky; top:0; background:rgba(255,255,255,0.96); backdrop-filter:blur(12px); z-index:100; }
+        .logo-area img { height:46px; max-height:46px; object-fit:contain; }
+        .search-sort-bar { display:flex; justify-content:space-between; align-items:center; max-width:1300px; margin:25px auto 10px; padding:0 20px; gap:15px; flex-wrap:wrap; }
+        .search-box { flex:1; min-width:280px; position:relative; }
+        .search-box input { width:100%; padding:12px 15px; border:1px solid var(--border-line); outline:none; font-size:13px; }
+        .sort-box select { padding:12px 20px; border:1px solid var(--border-line); outline:none; font-size:13px; background:#ffffff; cursor:pointer; }
+        .filter-tabs-row { display:flex; justify-content:center; gap:10px; margin:15px auto 25px; flex-wrap:wrap; max-width:1200px; padding:0 20px; }
+        .filter-btn { padding:10px 22px; border:1px solid var(--border-line); background:#ffffff; font-size:11px; font-weight:600; text-transform:uppercase; cursor:pointer; letter-spacing:0.5px; }
+        .filter-btn.active-filter, .filter-btn:hover { background:var(--primary-dark); color:#ffffff; border-color:var(--primary-dark); }
+        .shipping-meter { max-width:1300px; margin:10px auto 25px; padding:0 20px; font-size:12px; font-weight:600; text-align:center; }
+        .meter-track { width:100%; height:6px; background:var(--border-line); margin-top:6px; position:relative; }
+        .meter-fill { height:100%; background:var(--accent-pink); width:0%; transition:width 0.3s ease; }
+        .showcase-wrapper { max-width:1300px; margin:0 auto 80px; padding:0 20px; }
+        .product-grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:35px; }
+        .product-node { border:1px solid var(--border-line); padding:16px; background:#ffffff; display:flex; flex-direction:column; transition:0.3s ease; cursor:pointer; position:relative; }
+        .product-node:hover { transform:translateY(-5px); box-shadow:0 12px 35px rgba(0,0,0,0.06); }
+        .badge-tag { position:absolute; top:15px; left:15px; background:var(--accent-pink); color:#ffffff; padding:4px 10px; font-size:10px; font-weight:700; text-transform:uppercase; z-index:10; }
+        .product-display-frame { width:100%; height:380px; background:var(--surface-bg); margin-bottom:15px; background-size:cover; background-position:center; }
+        .product-label { font-size:15px; font-weight:600; margin-bottom:6px; }
+        .product-cost { font-size:16px; font-weight:700; color:var(--primary-dark); margin-bottom:15px; }
+        .modal-overlay { position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(0,0,0,0.5); z-index:2000; display:none; align-items:center; justify-content:center; backdrop-filter:blur(4px); padding:20px; }
+        .modal-overlay.active-view { display:flex; }
+        .modal-card-box { background:#ffffff; width:100%; max-width:850px; display:grid; grid-template-columns:1fr 1fr; gap:30px; padding:30px; position:relative; max-height:90vh; overflow-y:auto; }
+        .modal-close-trigger { position:absolute; top:15px; right:20px; font-size:28px; cursor:pointer; color:#111; font-weight:300; }
+        .modal-preview-frame { width:100%; height:450px; background-size:cover; background-position:center; background-color:var(--surface-bg); }
+        .modal-details-pane { display:flex; flex-direction:column; text-align:left; }
+        .modal-title { font-size:22px; font-weight:700; margin-bottom:10px; text-transform:uppercase; }
+        .modal-price { font-size:20px; font-weight:700; color:var(--accent-pink); margin-bottom:15px; }
+        .modal-desc { font-size:13px; color:var(--text-muted); line-height:1.6; margin-bottom:15px; border-bottom:1px solid var(--border-line); padding-bottom:15px; }
+        .modal-spec-row { font-size:12px; margin-bottom:6px; color:var(--primary-dark); }
+        .cart-slide-drawer { position:fixed; top:0; right:-460px; width:460px; height:100vh; background:#ffffff; box-shadow:-10px 0 40px rgba(0,0,0,0.06); z-index:1500; padding:25px; display:flex; flex-direction:column; transition:0.3s ease; }
+        .cart-slide-drawer.active-view { right:0; }
+        .drawer-header { display:flex; justify-content:space-between; align-items:center; margin-bottom:20px; border-bottom:1px solid var(--border-line); padding-bottom:12px; }
+        .drawer-scroll-area { flex:1; overflow-y:auto; margin-bottom:15px; }
+        .node-cart-row { display:flex; justify-content:space-between; align-items:center; margin-bottom:15px; padding-bottom:15px; border-bottom:1px solid var(--surface-bg); }
+        .quantity-controller { display:flex; align-items:center; gap:8px; margin-top:5px; }
+        .qty-btn { width:22px; height:22px; border:1px solid var(--border-line); background:#ffffff; font-size:12px; cursor:pointer; font-weight:700; }
+        .promo-block { margin:10px 0; border-top:1px dashed var(--border-line); padding-top:12px; }
+        .promo-input-row { display:flex; gap:8px; margin-top:6px; }
+        .promo-input-row input { flex:1; padding:8px 12px; border:1px solid var(--border-line); font-size:12px; outline:none; text-transform:uppercase; }
+        .promo-btn { padding:8px 15px; background:var(--primary-dark); color:#ffffff; border:none; font-size:11px; font-weight:700; cursor:pointer; }
+        .promo-status-text { font-size:11px; margin-top:4px; font-weight:600; display:none; }
+        .checkout-delivery-form { background:var(--surface-bg); padding:15px; border:1px solid var(--border-line); margin-bottom:15px; display:none; }
         .checkout-delivery-form.active-view { display: block; }
-        .checkout-delivery-form h4 { font-size: 11px; text-transform: uppercase; margin-bottom: 10px; font-weight: 700; }
-        .input-flex-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 6px; }
-        .checkout-delivery-form input { width: 100%; padding: 8px 10px; border: 1px solid var(--border-line); font-size: 12px; background: #ffffff; outline: none; }
-        .span-full-columns { grid-column: span 2; }
-        .drawer-footer-block { border-top: 1px solid var(--border-line); padding-top: 15px; }
-        .summary-total-row { display: flex; justify-content: space-between; font-weight: 700; font-size: 15px; margin-bottom: 15px; text-transform: uppercase; }
-        .action-submit-btn { width: 100%; display: block; background: var(--primary-dark); color: #ffffff; text-align: center; padding: 12px; text-transform: uppercase; font-weight: 700; font-size: 11px; border: none; cursor: pointer; }
-        .global-viewport-overlay { position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background: rgba(0,0,0,0.4); z-index: 999; display: none; backdrop-filter: blur(2px); }
-        .global-viewport-overlay.active-view { display: block; }
-        @media (max-width: 480px) { .cart-slide-drawer { width: 100%; right: -100%; } nav { display: none; } }
-        footer { background: var(--primary-dark); color: #a1a1aa; text-align: center; padding: 40px 20px; font-size: 11px; margin-top: 60px; }
+        .checkout-delivery-form h4 { font-size:11px; text-transform:uppercase; margin-bottom:10px; font-weight:700; }
+        .input-flex-grid { display:grid; grid-template-columns:1fr 1fr; gap:8px; margin-bottom:6px; }
+        .checkout-delivery-form input { width:100%; padding:10px; border:1px solid var(--border-line); font-size:12px; outline:none; }
+        .span-full-columns { grid-column:span 2; }
+        .fee-breakdown-row { display:flex; justify-content:space-between; font-size:12px; color:var(--text-muted); margin-bottom:6px; }
+        .dual-btn-row { display:grid; grid-template-columns:1fr 1fr; gap:10px; }
+        .btn-pay-gateway { background:var(--primary-dark); color:#ffffff; padding:14px; border:none; text-transform:uppercase; font-weight:700; font-size:11px; cursor:pointer; }
+        .btn-whatsapp-gateway { background:#25d366; color:#ffffff; padding:14px; border:none; text-transform:uppercase; font-weight:700; font-size:11px; cursor:pointer; }
+        .global-viewport-overlay { position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(0,0,0,0.4); z-index:1400; display:none; backdrop-filter:blur(2px); }
+        .global-viewport-overlay.active-view { display:block; }
+        @media (max-width:768px) { .modal-card-box { grid-template-columns:1fr; max-height:95vh; } .modal-preview-frame { height:280px; } .cart-slide-drawer { width:100%; right:-100%; } }
+        footer { background:var(--primary-dark); color:#a1a1aa; text-align:center; padding:45px 20px; font-size:12px; border-top:1px solid var(--border-line); }
     </style>
 </head>
 <body>
-    <div class="announcement-bar">✨ Grand Launch Offer: Free Express Delivery Across India ✨</div>
+    <div class="announcement-bar">✨ Code: WELCOME10 for 10% Off | Free Shipping on Orders Above ₹3,000 ✨</div>
     <div class="global-viewport-overlay" id="globalViewportOverlay" onclick="toggleCartDrawer()"></div>
     <header>
         <div class="logo-area"><img src="logo.png" alt="SHYTRENDZ" onerror="this.style.display='none'; this.parentNode.innerText='SHYTRENDZ';"></div>
-        <nav><a href="#storefront-catalog">Collections</a></nav>
-        <div class="bag-trigger" onclick="toggleCartDrawer()">Bag <span class="bag-counter" id="globalBagCounter">0</span></div>
+        <div class="bag-trigger" onclick="toggleCartDrawer()" style="cursor:pointer; font-weight:600; font-size:13px; text-transform:uppercase;">Bag (<span id="globalBagCounter">0</span>)</div>
     </header>
-    <section class="hero-banner"><h1>Wear Your Confidence</h1><a href="#storefront-catalog" class="hero-action-link">Explore Catalog</a></section>
-    <div class="trust-row"><div class="trust-tag">🚚 PAN India Premium Shipping</div><div class="trust-tag">💯 100% Quality Guaranteed</div><div class="trust-tag">🔒 Secure Checkout</div></div>
-    <main class="showcase-wrapper" id="storefront-catalog">
-        <h2 class="section-headline">New Collections</h2>
-        <div class="product-grid">
-            <div class="product-node" data-product-id="saree-01">
-                <div class="product-display-frame" style="background-image: url('saree1.jpg');"></div>
-                <div class="product-label">Handwoven Kanjeevaram Silk Saree</div><div class="product-cost">₹2,499</div>
-                <div class="selector-headline">Blouse Size</div>
-                <div class="variant-group-row"><span class="variant-unit active-selected" onclick="selectVariantState(this)">Standard</span><span class="variant-unit" onclick="selectVariantState(this)">Custom Stitched</span></div>
-                <button class="action-add-trigger" onclick="executeCartInsertion('saree-01', 'Handwoven Kanjeevaram Silk Saree', 2499)">Add To Bag</button>
-            </div>
-            <div class="product-node" data-product-id="chudidhar-01">
-                <div class="product-display-frame" style="background-image: url('chudidhar1.jpg');"></div>
-                <div class="product-label">Elegant Designer Anarkali Chudidhar Set</div><div class="product-cost">₹1,899</div>
-                <div class="selector-headline">Size</div>
-                <div class="variant-group-row"><span class="variant-unit active-selected" onclick="selectVariantState(this)">M</span><span class="variant-unit" onclick="selectVariantState(this)">L</span><span class="variant-unit" onclick="selectVariantState(this)">XL</span></div>
-                <button class="action-add-trigger" onclick="executeCartInsertion('chudidhar-01', 'Elegant Designer Anarkali Chudidhar Set', 1899)">Add To Bag</button>
-            </div>
-            <div class="product-node" data-product-id="lehenga-01">
-                <div class="product-display-frame" style="background-image: url('lehenga1.jpg');"></div>
-                <div class="product-label">Royal Bridal Heritage Lehenga Choli</div><div class="product-cost">₹4,999</div>
-                <div class="selector-headline">Waist</div>
+    <div class="search-sort-bar">
+        <div class="search-box"><input type="text" id="storefrontSearchInput" placeholder="Search for Sarees, Lehengas, Chudidhars, Jeans..." oninput="processCatalogInteraction()"></div>
+        <div class="sort-box"><select id="storefrontSortSelect" onchange="processCatalogInteraction()"><option value="default">Sort by: Featured</option><option value="low-to-high">Price: Low to High</option><option value="high-to-low">Price: High to Low</option></select></div>
+    </div>
+    <div class="filter-tabs-row">
+        <button class="filter-btn active-filter" onclick="executeCatalogFiltering('all', this)">All Curation</button>
+        <button class="filter-btn" onclick="executeCatalogFiltering('saree', this)">Luxury Sarees</button>
+        <button class="filter-btn" onclick="executeCatalogFiltering('chudidhar', this)">Anarkali Sets</button>
+        <button class="filter-btn" onclick="executeCatalogFiltering('lehenga', this)">Bridal Lehengas</button>
