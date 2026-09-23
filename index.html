@@ -73,12 +73,13 @@
         .logo-container {
             display: flex;
             align-items: center;
+            background: transparent;
         }
         .logo-img {
-            height: 75px; /* Perfect sizing to preserve script detail */
+            height: 75px; 
             width: auto;
             object-fit: contain;
-            mix-blend-mode: multiply; /* Blends logo background out seamlessly */
+            mix-blend-mode: multiply; /* Ensures background matches clean nav headers */
         }
         nav ul {
             display: flex;
@@ -168,7 +169,7 @@
         .media-container {
             position: relative;
             width: 100%;
-            padding-bottom: 135px; /* Clean 3:4 portrait retail crop ratio */
+            padding-bottom: 135px; /* Clean 3:4 portrait crop ratio */
             overflow: hidden;
             background-color: #f2f0eb;
             border-radius: var(--card-radius);
@@ -185,11 +186,9 @@
             opacity: 0;
             transition: opacity 0.8s ease-in-out, transform 1.2s cubic-bezier(0.25, 1, 0.5, 1);
         }
-        /* Make the first image active explicitly */
         .group-image.active {
             opacity: 1;
         }
-        /* Smooth zoom on container hover */
         .group-card:hover .media-container {
             box-shadow: 0 15px 35px rgba(17, 45, 26, 0.12);
         }
@@ -229,7 +228,7 @@
             border-color: var(--brand-accent);
         }
 
-        /* ELEGANT FOOTER ACCENT */
+        /* FOOTER */
         footer {
             background-color: var(--brand-primary);
             color: #ffffff;
@@ -239,6 +238,7 @@
             letter-spacing: 1.5px;
             font-weight: 300;
             border-top: 4px solid var(--brand-accent);
+            margin-top: 40px;
         }
         footer p {
             color: rgba(255, 255, 255, 0.6);
@@ -252,7 +252,7 @@
         ✨ Code: <span>WELCOME10</span> for 10% Off | Free Shipping on Orders Above ₹3,000 ✨
     </div>
 
-    <!-- MAIN APP HEADER AREA WITH LOGO BLENDING -->
+    <!-- MAIN NAVIGATION HEADER -->
     <header>
         <div class="header-wrapper">
             <div class="logo-container">
@@ -271,25 +271,30 @@
         </div>
     </header>
 
-    <!-- INTRO DIALOGUE BRAND STATEMENT -->
+    <!-- HERO SECTION -->
     <section class="hero-intro">
         <h1>gorgeous...you</h1>
         <p>Step into premium luxury couture. Explore our curated signature collections designed to reflect true timeless elegance.</p>
     </section>
 
-    <!-- INTERACTIVE DYNAMIC CATEGORIES DISPLAY -->
-    <section class="inventory-grid">
+    <!-- SIX-ELEMENT CATEGORIES INVENTORY GRID -->
+    <main class="inventory-grid">
 
-        <!-- SAREES CATEGORY CARD -->
+        <!-- 1. SAREES -->
         <a href="sarees.html" class="group-card">
             <div class="media-container" data-slideshow>
-                <!-- Initial active sample image -->
                 <img src="sarees-1.png" alt="Exclusive Luxury Sarees" class="group-image active">
-                <!-- Add alternative images here later when ready: 
-                <img src="sarees-2.png" alt="Sarees Option 2" class="group-image"> 
-                -->
             </div>
             <div class="group-details">
                 <h2 class="group-title">Sarees</h2>
                 <span class="group-action-label">View All</span>
             </div>
+        </a>
+
+        <!-- 2. CHUDI -->
+        <a href="chudi.html" class="group-card">
+            <div class="media-container" data-slideshow>
+                <img src="chudi-1.png" alt="Designer Chudi Sets" class="group-image active">
+            </div>
+            <div class="group-details">
+                <h2 class="group-title">Chudi</h2>
