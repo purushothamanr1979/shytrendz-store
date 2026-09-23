@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ShyTrendz | Premium Luxury Women's Apparel Store</title>
-    <!-- Google Fonts for Editorial Luxury Look -->
+    <!-- Google Fonts for Luxury Aesthetic -->
     <link rel="preconnect" href="https://googleapis.com">
     <link rel="preconnect" href="https://gstatic.com" crossorigin>
     <link href="https://googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -17,9 +17,9 @@
             box-sizing: border-box;
         }
         :root {
-            --brand-primary: #112d1a; /* Forest Green from your logo */
+            --brand-primary: #112d1a; /* Forest Green from logo */
             --brand-accent: #8b7355;  /* Soft Gold highlight */
-            --bg-base: #fbfbf9;       /* Ultra-clean warm off-white */
+            --bg-base: #fbfbf9;       /* Clean luxury off-white */
             --text-main: #1c1c1c;
             --text-muted: #666666;
             --font-serif: 'Cormorant Garamond', serif;
@@ -79,7 +79,9 @@
             height: 80px; 
             width: auto;
             object-fit: contain;
-            mix-blend-mode: multiply; /* Keeps logo completely clean against navbar */
+            /* Isolates darker line details and systematically strips out the light lilac background canvas box */
+            mix-blend-mode: color-burn;
+            filter: contrast(1.1) brightness(1.05);
         }
         nav ul {
             display: flex;
@@ -114,7 +116,7 @@
             color: var(--brand-accent);
         }
 
-        /* HERO HEADER BRAND STATEMENT */
+        /* HERO BRAND HEADER AREA */
         .hero-intro {
             padding: 80px 40px 40px;
             max-width: 1400px;
@@ -138,7 +140,7 @@
             letter-spacing: 0.5px;
         }
 
-        /* INVENTORY ARCHITECTURE GRID CONTAINER */
+        /* RESPONSIVE INVENTORY TILES GRID MATRIX */
         .inventory-grid {
             max-width: 1400px;
             margin: 0 auto;
@@ -159,7 +161,7 @@
             .hero-intro h1 { font-size: 2.5rem; }
         }
 
-        /* COLLECTION GRID CARDS CONFIGURATION */
+        /* PRODUCT DISPLAY LINK ARCHITECTURE */
         .group-card {
             text-decoration: none;
             color: inherit;
@@ -169,7 +171,7 @@
         .media-container {
             position: relative;
             width: 100%;
-            padding-bottom: 135px; /* Clean portrait crop layout */
+            padding-bottom: 135px; /* Clean standard portrait aspect crop ratio */
             overflow: hidden;
             background-color: #f2f0eb;
             border-radius: var(--card-radius);
@@ -227,7 +229,7 @@
             border-color: var(--brand-accent);
         }
 
-        /* PREMIUM STORE FOOTER SYSTEM */
+        /* ELEGANT BRAND FOOTER EL */
         footer {
             background-color: var(--brand-primary);
             color: #ffffff;
@@ -237,8 +239,6 @@
             letter-spacing: 1.5px;
             font-weight: 300;
             border-top: 4px solid var(--brand-accent);
-            width: 100%;
-            clear: both;
         }
         footer p {
             color: rgba(255, 255, 255, 0.6);
@@ -252,7 +252,7 @@
         ✨ Code: <span>WELCOME10</span> for 10% Off | Free Shipping on Orders Above ₹3,000 ✨
     </div>
 
-    <!-- MAIN APP NAVIGATION HEADER -->
+    <!-- MAIN NAVIGATION BAR -->
     <header>
         <div class="header-wrapper">
             <div class="logo-container">
@@ -271,18 +271,18 @@
         </div>
     </header>
 
-    <!-- CENTER BRAND PROMO SPLASH -->
+    <!-- CENTER HERO STATEMENT -->
     <section class="hero-intro">
         <h1>gorgeous...you</h1>
         <p>Step into premium luxury couture. Explore our curated signature collections designed to reflect true timeless elegance.</p>
     </section>
 
-    <!-- INVENTORY CARD MATRIX -->
+    <!-- INVENTORY CARD DISPLAY MATRIX WRAPPER -->
     <main class="inventory-grid">
 
         <!-- 1. SAREES -->
         <a href="sarees.html" class="group-card">
-            <div class="media-container">
+            <div class="media-container" data-slideshow>
                 <img src="sarees-1.png" alt="Exclusive Luxury Sarees" class="group-image active">
             </div>
             <div class="group-details">
@@ -293,7 +293,7 @@
 
         <!-- 2. CHUDI -->
         <a href="chudi.html" class="group-card">
-            <div class="media-container">
+            <div class="media-container" data-slideshow>
                 <img src="chudi-1.png" alt="Designer Chudi Sets" class="group-image active">
             </div>
             <div class="group-details">
