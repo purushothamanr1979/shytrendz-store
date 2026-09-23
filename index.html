@@ -49,7 +49,7 @@
             font-weight: 500;
         }
         .promo-bar span {
-            color: #d4af37; /* Bright Gold accent */
+            color: #d4af37; 
             font-weight: 600;
         }
 
@@ -76,10 +76,10 @@
             background: transparent;
         }
         .logo-img {
-            height: 75px; 
+            height: 80px; 
             width: auto;
             object-fit: contain;
-            mix-blend-mode: multiply; /* Ensures background matches clean nav headers */
+            mix-blend-mode: multiply; /* Keeps logo completely clean against navbar */
         }
         nav ul {
             display: flex;
@@ -114,7 +114,7 @@
             color: var(--brand-accent);
         }
 
-        /* COLLECTION HERO HEADER */
+        /* HERO HEADER BRAND STATEMENT */
         .hero-intro {
             padding: 80px 40px 40px;
             max-width: 1400px;
@@ -138,7 +138,7 @@
             letter-spacing: 0.5px;
         }
 
-        /* INVENTORY STYLISH ARCHITECTURE GRID */
+        /* INVENTORY ARCHITECTURE GRID CONTAINER */
         .inventory-grid {
             max-width: 1400px;
             margin: 0 auto;
@@ -159,7 +159,7 @@
             .hero-intro h1 { font-size: 2.5rem; }
         }
 
-        /* PREMIUM IMAGE LINKS CARD LAYOUT */
+        /* COLLECTION GRID CARDS CONFIGURATION */
         .group-card {
             text-decoration: none;
             color: inherit;
@@ -169,7 +169,7 @@
         .media-container {
             position: relative;
             width: 100%;
-            padding-bottom: 135px; /* Clean 3:4 portrait crop ratio */
+            padding-bottom: 135px; /* Clean portrait crop layout */
             overflow: hidden;
             background-color: #f2f0eb;
             border-radius: var(--card-radius);
@@ -196,7 +196,6 @@
             transform: scale(1.05);
         }
         
-        /* CARD BOTTOM TEXT LABELS */
         .group-details {
             padding: 22px 4px 0;
             display: flex;
@@ -228,7 +227,7 @@
             border-color: var(--brand-accent);
         }
 
-        /* FOOTER */
+        /* PREMIUM STORE FOOTER SYSTEM */
         footer {
             background-color: var(--brand-primary);
             color: #ffffff;
@@ -238,7 +237,8 @@
             letter-spacing: 1.5px;
             font-weight: 300;
             border-top: 4px solid var(--brand-accent);
-            margin-top: 40px;
+            width: 100%;
+            clear: both;
         }
         footer p {
             color: rgba(255, 255, 255, 0.6);
@@ -252,7 +252,7 @@
         ✨ Code: <span>WELCOME10</span> for 10% Off | Free Shipping on Orders Above ₹3,000 ✨
     </div>
 
-    <!-- MAIN NAVIGATION HEADER -->
+    <!-- MAIN APP NAVIGATION HEADER -->
     <header>
         <div class="header-wrapper">
             <div class="logo-container">
@@ -271,18 +271,18 @@
         </div>
     </header>
 
-    <!-- HERO SECTION -->
+    <!-- CENTER BRAND PROMO SPLASH -->
     <section class="hero-intro">
         <h1>gorgeous...you</h1>
         <p>Step into premium luxury couture. Explore our curated signature collections designed to reflect true timeless elegance.</p>
     </section>
 
-    <!-- SIX-ELEMENT CATEGORIES INVENTORY GRID -->
+    <!-- INVENTORY CARD MATRIX -->
     <main class="inventory-grid">
 
         <!-- 1. SAREES -->
         <a href="sarees.html" class="group-card">
-            <div class="media-container" data-slideshow>
+            <div class="media-container">
                 <img src="sarees-1.png" alt="Exclusive Luxury Sarees" class="group-image active">
             </div>
             <div class="group-details">
@@ -293,7 +293,7 @@
 
         <!-- 2. CHUDI -->
         <a href="chudi.html" class="group-card">
-            <div class="media-container" data-slideshow>
+            <div class="media-container">
                 <img src="chudi-1.png" alt="Designer Chudi Sets" class="group-image active">
             </div>
             <div class="group-details">
