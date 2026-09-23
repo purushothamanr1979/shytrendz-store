@@ -79,9 +79,7 @@
             height: 80px; 
             width: auto;
             object-fit: contain;
-            /* Isolates darker line details and systematically strips out the light lilac background canvas box */
-            mix-blend-mode: color-burn;
-            filter: contrast(1.1) brightness(1.05);
+            mix-blend-mode: multiply; /* Blends out light logo backgrounds seamlessly */
         }
         nav ul {
             display: flex;
@@ -298,3 +296,4 @@
             </div>
             <div class="group-details">
                 <h2 class="group-title">Chudi</h2>
+                <span class="group-action-label">View All</span>
